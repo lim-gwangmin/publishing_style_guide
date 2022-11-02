@@ -1,0 +1,57 @@
+//header height 
+$headerHeight: 10rem;
+$depth2Position: $headerHeight + 2rem;
+
+// container 
+$container : calc(1200px + 2rem);
+
+// media query
+$web : $container - .2px;
+$pad: 1023.98px;
+$mobile: 767.98px;
+
+// color 
+$color1 : #3e77c6;
+$color2 : #58ad87;
+$color3 : #00c4ae;
+$color4 : #00b2f6;
+$color5 : #ff5371;
+
+//position:absolute
+@mixin pos ($pos, $n1, $n2, $x:null, $y:null){
+    position:absolute; 
+    @if ($x != null and $y == null)  {transform:translateX($x);}
+    @else if ($x != null and $y != null) {transform:translate($x, $y);} 
+    @if ($pos == lt) {left: $n1; top:$n2;}
+    @else if ($pos == rt) {right: $n1; top:$n2;}
+    @else if ($pos == lb) {left: $n1; bottom:$n2;}
+    @else if ($pos == rb) {right: $n1; bottom:$n2;}
+  }
+
+//ellipsis
+@mixin ellipsis {
+    display:block;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+@mixin ellipsis2($row, $height) {
+    display:block; 
+    display:-webkit-box; 
+    -webkit-line-clamp: $row; 
+    max-height:$height; 
+    -webkit-box-orient:vertical;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:normal;
+    word-wrap:break-word;
+    word-break:keep-all
+}
+
+//xeicon
+@mixin xeicon($cont, $size:null){
+    display:inline-block; 
+    font-family: 'xeicon'; 
+    content:$cont; 
+    font-size: $size;
+  }
