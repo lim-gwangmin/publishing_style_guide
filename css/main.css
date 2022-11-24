@@ -1,4 +1,6 @@
-@charset "UTF-8";
+/* ===========================================================================================
+      visual
+=========================================================================================== */
 #visual {
   margin-top: 10rem;
   position: relative;
@@ -14,11 +16,19 @@
 }
 
 #visual .visualItem.visual1 {
-  background-image: url(../img/main/main_visual01.jpeg);
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/0f22af4d-15e0-452d-ba66-1359490b4a0b/bvlatuR/std/2880x1800/Cybertruck-Hero-Desktop);
 }
 
 #visual .visualItem.visual2 {
-  background-image: url(../img/main/main_visual02.png);
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD);
+}
+
+#visual .visualItem.visual3 {
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ddc135ed-1638-40fb-8ab1-f8045059ecef/bvlatuR/std/4096x2560/Homepage-Model-X-Desktop-LHD);
+}
+
+#visual .visualItem.visual4 {
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/538ac149-d103-4834-9d38-641d8ae447ef/bvlatuR/std/4096x2560/Homepage-Model-S-Desktop-LHD);
 }
 
 #visual .visualItem .visualTitle {
@@ -38,123 +48,36 @@
   margin: 2rem 0;
 }
 
-#visual .visualItem .visualContents {
-  display: table;
-  width: 100%;
-}
-
-#visual .visualItem .visualContents > div {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#visual .visualItem .visualContents > div:first-child {
-  width: 65%;
-}
-
 #visual .visualArea,
 #visual .slick-list,
 #visual .slick-track {
   height: 100%;
 }
 
-.slideBtnWrap {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  padding: 0 2rem;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+/* ===========================================================================================
+      main
+=========================================================================================== */
+/* section */
+.section {
+  padding: 10rem 0;
 }
 
-.slideBtnWrap .slick-arrow {
-  position: relative;
-  font-size: 0;
-}
-
-.slideBtnWrap .slick-next {
-  float: right;
-}
-
-.slideBtnWrap .slick-next::before {
-  display: inline-block;
-  font-family: 'xeicon';
-  content: "";
-  font-size: 4rem;
-}
-
-.slideBtnWrap .slick-prev::before {
-  display: inline-block;
-  font-family: 'xeicon';
-  content: "";
-  font-size: 4rem;
-}
-
-.visualDot {
-  position: absolute;
-  width: 100%;
-  font-size: 0;
-  text-align: center;
-  bottom: 5rem;
-}
-
-.visualDot > li {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 100%;
-  border: 1px solid #333;
-  margin: 0 .5rem;
-  background-color: #fff;
-  -webkit-transition: ease-out .3s;
-  transition: ease-out .3s;
-}
-
-.visualDot > li > button {
-  font-size: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.visualDot > li.slick-active {
-  background: #333;
-}
-
-#main .section {
-  text-align: center;
-  padding: 15rem 0;
-}
-
-#main #section1 {
-  background-color: #f8f8f8;
-}
-
-#main #section3 {
-  background-color: #f8f8f8;
-}
-
-@media (max-width: 767px) {
-  #visual .visualItem .visualTitle {
-    position: relative;
-    top: auto;
-    -webkit-transform: none;
-            transform: none;
-    padding: 10rem 0;
+/* ===========================================================================================
+   media query
+=========================================================================================== */
+/* max-width */
+@media (max-width: calc(1200px + 2rem)) {
+  /* ===========================================================================================
+         visual
+   =========================================================================================== */
+  .visualContents {
+    padding: 0 4rem;
   }
-  #visual .visualItem .visualContents {
-    display: block;
-  }
-  #visual .visualItem .visualContents > div {
-    display: block;
-  }
-  #visual .visualItem .visualContents > div:first-child {
-    width: 100%;
-  }
-  #visual .visualItem .visualContents > div:last-child {
-    max-width: 30rem;
-    margin: 2rem auto 0;
+}
+
+@media (max-width: 1023.98px) {
+  .visualContents {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
