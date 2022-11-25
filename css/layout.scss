@@ -50,7 +50,6 @@ body.overflow {
       opacity: 1;
     }
     &.scrollDown {
-      background-color:#f8f8f8;
     }
     .logo {
         display: inline-block;
@@ -285,7 +284,6 @@ body.overflow {
       }
    }
 }
-
 /* ===========================================================================================
       header position   
 =========================================================================================== */
@@ -293,8 +291,6 @@ body.overflow {
 #header.fixed {
    position: fixed;
 }
-
-
 /* ===========================================================================================
       sub layout   
 =========================================================================================== */
@@ -443,7 +439,7 @@ body.overflow {
 #subContent {
    width: $subContentWid;
    margin-left:$subContentmargin;
-   padding:6rem 1rem 3rem;
+   padding:6rem 1rem 10rem;
    float:right;
 }
 
@@ -548,58 +544,62 @@ body.overflow {
 /* min-wiedth */
    /* only desktop */
 @media (min-width:1025px) {
-   //pc site-map
+/* ===========================================================================================
+     pc site-map
+=========================================================================================== */
    #header {
-         .menusWrap.siteMap {
-            position: fixed;
-            width:100vw;
-            height:100vh;
-            background-color: #fff;
-            top:0;
-            left:0;
-            float:none;
-            .depthMenu {
-               position: absolute;
-               left:50%;
-               transform: translateX(-50%);
-               top: 14rem;
-               width:100%;
-               max-width:129rem;
-               padding:2rem;
-               > ul {
-                     display: table;
-                     width:100%;
-                     table-layout: fixed;
-                     &::after {
-                        display:none;
-                     }
-               }
-               li.depth1 {
-                     display: table-cell;
-                     float:none;
-               }
-               .depth2 {
-                     position: static;
-                     height:auto;
-                     opacity:1;
-                     visibility: visible;
-                     overflow:visible;
-               }
+      .menusWrap.siteMap {
+         position: fixed;
+         width:100vw;
+         height:100vh;
+         background-color: #fff;
+         top:0;
+         left:0;
+         float:none;
+         .depthMenu {
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+            top: 14rem;
+            width:100%;
+            max-width:129rem;
+            padding:2rem;
+            > ul {
+                  display: table;
+                  width:100%;
+                  table-layout: fixed;
+                  &::after {
+                     display:none;
+                  }
             }
-            .btnMenu {
-               float: none;
-               max-width: $container;
-               padding:0 2rem;
-               text-align:right;
-               margin:0 auto;
+            li.depth1 {
+                  display: table-cell;
+                  float:none;
+            }
+            .depth2 {
+                  position: static;
+                  height:auto;
+                  opacity:1;
+                  visibility: visible;
+                  overflow:visible;
             }
          }
+         .btnMenu {
+            float: none;
+            max-width: $container;
+            padding:0 2rem;
+            text-align:right;
+            margin:0 auto;
+         }
+      }
    }
 }
 /* max-width */
    /* pad */
 @media (max-width:1024px) {
-   //wrap
+/* ===========================================================================================
+    wrap
+=========================================================================================== */
    #wrap {
          &::before {
             content:"";
@@ -622,7 +622,9 @@ body.overflow {
             background:rgba(0,0,0,.3);
          }
    }
-   //header
+/* ===========================================================================================
+    header
+=========================================================================================== */
    #header {
          .menusWrap {
             float:none;
@@ -713,11 +715,15 @@ body.overflow {
             overflow:visible;
          }
    }
-   //sub visual
+/* ===========================================================================================
+    sub visual
+=========================================================================================== */
    #subVisual {
          padding-bottom: $padVisualHeight;
    }
-   //sub side menu
+/* ===========================================================================================
+     sub side menu
+=========================================================================================== */
    #subSideMenu {
          position:absolute;
          left:0;
@@ -844,7 +850,9 @@ body.overflow {
          overflow: visible;
          height: auto;
    }
-   // sub Content
+/* ===========================================================================================
+    sub Content
+=========================================================================================== */
    #subContent {
          width:100%;
          margin-left:0;
@@ -852,23 +860,31 @@ body.overflow {
          float: none;
          padding-top: 10rem;
    }
-   //footer
+/* ===========================================================================================
+    footer
+=========================================================================================== */
    .footerSection .footerAricle:first-child > .container {
          padding:0;
    }
 }
    /* mobile */
 @media (max-width:600px) {
-   // header 
+/* ===========================================================================================
+    header 
+=========================================================================================== */
    .btnMenu .searchBtn {
          font-size:3.3rem;
    }
-   //sub visual
+/* ===========================================================================================
+   sub visual
+=========================================================================================== */
    #subVisual {
          padding-bottom:0;
          height: $mobileVisualHeight;
    }
-   //footer
+/* ===========================================================================================
+    footer
+=========================================================================================== */
    .relateSite {
          float:none;
          .relateSite_title {

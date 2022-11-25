@@ -175,6 +175,7 @@ quick top nav
 .margin_rt10 {margin-right:1rem !important;}
 .margin_rt20 {margin-right:2rem !important;}
 /* margin-bottom */
+.margin_bt0 {margin-bottom:0rem !important;}
 .margin_bt5 {margin-bottom:.5rem !important;}
 .margin_bt10 {margin-bottom:1rem !important;}
 .margin_bt15 {margin-bottom:1.5rem !important;}
@@ -592,7 +593,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 .custom_table {
    width: 100%;
-   min-width: 1000px;
+   min-width: 800px;
 }
 .custom_table.color_876EBE th {
    background-color: #876EBE;
@@ -732,7 +733,7 @@ input[type="checkbox"]:disabled + label::before {
     html{font-size: 9px;}
 }
 @media (max-width:1024px){
-    /* html{font-size: 8.5px;} */
+    html{font-size: 9px;}
 }
 @media (max-width: 768px){
     html{font-size: 8px;}

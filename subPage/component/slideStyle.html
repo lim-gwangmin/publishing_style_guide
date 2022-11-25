@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+   <title>style guide template</title>
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <!-- favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="../../img/favicon/favicon-192x192.png">
+   <link rel="icon" type="image/png" sizes="512x512" href="../../img/favicon/favicon-512x512.png">
+   <link rel="manifest" href="../../img/favicon/site.webmanifest">
+   <!-- css -->
+   <link rel="stylesheet" href="../../css/common.css">
+   <link rel="stylesheet" href="../../css/layout.css">
+   <!-- board -->
+   <link rel="stylesheet" href="../../css/board.css">
+   <!-- content -->
+   <link rel="stylesheet" href="../../css/content.css">
+   <!-- icon font -->
+   <link rel="stylesheet" href="../../iconFont/XEIcon-2.2.0/xeicon.min.css">
+   <!-- plugIn -->
+   <script src="../../plugin/jquery/jquery-3.2.1.min.js"></script>
+   <!-- slick slide -->
+   <script src="../../plugin/slick-1.8.1/slick/slick.min.js"></script>
+   <link rel="stylesheet" href="../../plugin/slick-1.8.1/slick/slick.css">
+   <!-- js -->
+   <script src="../../js/layout.js"></script>
+   <script src="../../js/util.js"></script>
+   <script src="../../js/slide.js"></script>
+</head>
+<body>
+    <div id="wrap">
+         <!-- skip nav -->
+        <nav id="skipNav">
+            <a href="#gnb">주메뉴 바로가기</a>
+            <a href="#subSideMenu">서브메뉴 바로가기</a>
+            <a href="#main">본문 바로가기</a>
+        </nav>
+        <!-- header -->
+        <header id="header" class="fixed">
+         <div class="container clear-fix">
+             <!-- logo -->
+             <h1 class="logo">
+                 <a href="../../index.html">
+                     <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FwfiLO%2Fbtqxrmdex80%2FGCZR0dGfdlpq4ISMAIP8OK%2Fimg.jpg" alt="로고">
+                 </a>
+             </h1>
+             <!-- header menu -->
+             <div class="menusWrap">
+                 <!-- menu -->
+                 <div class="depthMenu">
+                     <ul class="clear-fix" id="gnb">
+                         <li class="depth1">
+                             <a href="./subLayout.html" class="depth1_title">
+                                 게시판
+                             </a>
+                             <ul class="depth2">
+                                 <li>
+                                     <a href="./tableList.html">
+                                         table list
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="./tableGallery.html">
+                                         table gallery
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="./tableBookStyle.html">
+                                         table book style
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="./tableThumbnail.html">
+                                         table thumbnail
+                                     </a>
+                                 </li>
+                             </ul>
+                         </li>
+                         <li class="depth1">
+                           <a href="./listStyle.html" class="depth1_title">
+                               컴포넌트
+                           </a>
+                           <ul class="depth2">
+                               <li>
+                                   <a href="./listStyle.html">
+                                     list style
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="./inputStyle.html">
+                                     input style
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="./slideStyle.html">
+                                       slide style
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="./tableStyle.html">
+                                       table style
+                                   </a>
+                               </li>
+                               <li>
+                                  <a href="./buttonModalStyle.html">
+                                      button, modal style
+                                  </a>
+                              </li>
+                           </ul>
+                       </li>
+                         <li class="depth1">
+                             <a href="" class="depth1_title">
+                                 대메뉴 3
+                             </a>
+                             <ul class="depth2">
+                                 <li>
+                                     <a href="#">
+                                         뎁스2 메뉴
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         뎁스2 메뉴
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         뎁스2 메뉴
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         뎁스2 메뉴
+                                     </a>
+                                 </li>
+                             </ul>
+                         </li>
+                         <li class="depth1">
+                             <a href="" class="depth1_title">
+                                 대메뉴 4
+                             </a>
+                             <ul class="depth2">
+                                 <li>
+                                     <a href="">
+                                         뎁스2 메뉴
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="">
+                                         뎁스2 메뉴
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="">
+                                         뎁스2 메뉴
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="">
+                                         뎁스2 메뉴
+                                     </a>
+                                 </li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </div>
+                 <!-- 검색 버튼, 회원가입 버튼 등등 -->
+                 <div class="btnMenu">
+                     <div class="searchWrap">
+                         <button class="searchBtn">
+                             <i class="xi-search"></i>
+                         </button>
+                         <div class="totalSearch_wrapper">
+                             <div class="totalSearch_view">
+                                 <b class="totalSearch_Title">
+                                     통합검색
+                                 </b>
+                                 <div class="totalSearch_form">
+                                     <form action="">
+                                         <input type="text" name="" id="totalSearch_input" placeholder="검색어를 입력해 주세요.">
+                                         <button class="totalSearch_btn">검색</button>
+                                     </form>
+                                 </div>
+                                 <button class="totalSearch_close">
+                                 </button>
+                             </div>
+                         </div>
+                     </div>
+                     <button class="siteMap-btn">
+                         <span class="siteMap-top"></span>
+                         <span class="siteMap-mid"></span>
+                         <span class="siteMap-bt"></span>
+                     </button>
+                 </div>
+             </div>
+         </div>            
+      </header>
+        <!-- sub contents -->
+        <main id="subLayout_wrap">
+            <!-- sub visual -->
+            <!-- #subVisual .menu01 ~ 클래스 변경 시, background-image 변경 -->
+            <div id="subVisual" class="menu01">
+                <div class="subVisual_txtWrap">
+                    <h2 class="subVisual_title">
+                        서브 메뉴 타이틀입니다.
+                    </h2>
+                    <p class="subVisual_comment">
+                        서브 메뉴 콘텐츠입니다.
+                    </p>
+                </div>
+                <nav id="subNav">
+                    <div class="container">
+                        <ul class="clear-fix">
+                            <li class="home">
+                                <a href="/index.html">
+                                    <i class="xi-home"></i>
+                                </a>  
+                            </li>
+                            <li class="navItem">
+                                <a href="#">
+                                    메뉴1
+                                </a>
+                            </li>
+                            <li class="navItem">
+                                <a href="#">
+                                    메뉴2
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div id="subLayout">
+                <div class="container clear-fix">
+                    <aside id="subSideMenu">
+                        <div class="subSideMenu_title">
+                            <h3>
+                                사이드메뉴 타이틀
+                            </h3>
+                        </div>
+                        <ul>
+                            <li class="SideMenu_depth1 active">
+                                <a href="www.naver.com">
+                                    서브뎁스1 메뉴 입니다.
+                                </a>
+                                <ul class="SideMenu_depth2">
+                                    <li class="active">
+                                        <a href="#">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="SideMenu_depth1">
+                                <a href="">
+                                    서브뎁스2 메뉴 입니다.
+                                </a>
+                                <ul class="SideMenu_depth2">
+                                    <li>
+                                        <a href="">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="SideMenu_depth1">
+                                <a href="">
+                                    서브뎁스3 메뉴 입니다.
+                                </a>
+                                <ul class="SideMenu_depth2">
+                                    <li class="">
+                                        <a href="">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="SideMenu_depth1">
+                                <a href="">
+                                    서브뎁스4 메뉴 입니다.
+                                </a>
+                                <ul class="SideMenu_depth2">
+                                    <li>
+                                        <a href="">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            서브뎁스2 메뉴 입니다.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+                    <section id="subContent">
+                        <article>
+                           <h3 class="subContent_title">
+                              슬라이드 스타일
+                           </h3>
+                           <div>
+                              <ul class="slider_wrap">
+                                 <li>
+                                    <img src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY06,$PPSW,$WY19B,$INPB0&view=FRONT34&model=my&size=1920&bkba_opt=2&crop=0,0,0,0&version=v0121-b5638c80d202211170306" alt="">
+                                 </li>
+                                 <li>
+                                    <img src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY06,$PPSW,$WY19B,$INPB0&view=SIDE&model=my&size=1920&bkba_opt=2&crop=0,0,0,0&version=v0121-b5638c80d202211170306" alt="">
+                                 </li>
+                                 <li>
+                                    <img src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY06,$PPSW,$WY19B,$INPB0&view=REAR34&model=my&size=1920&bkba_opt=2&crop=0,0,0,0&version=v0121-b5638c80d202211170306" alt="">
+                                 </li>
+                                 <li>
+                                    <img src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY06,$PPSW,$WY19B,$INPB0&view=RIMCLOSEUP&model=my&size=1920&bkba_opt=2&crop=0,0,80,0&version=v0121-b5638c80d202211170306" alt="">
+                                 </li>
+                              </ul>
+                           </div>
+                           <script>
+                              slider.funcType01('.slider_wrap');
+                           </script>
+                        </article>
+                  </section>
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer id="footer">
+         <div class="footerSection">
+            <!-- family site  -->
+            <div class="footerAricle">
+               <div class="container">
+                     <nav class="clear-fix">
+                        <div class="relateSite">
+                           <button class="relateSite_title">
+                                 관련사이트
+                           </button>
+                           <ul class="relateSite_list">
+                                 <li>
+                                    <a href="#">
+                                       패밀리 사이트1
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#">
+                                       패밀리 사이트2
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#">
+                                       패밀리 사이트3
+                                    </a>
+                                 </li>
+                           </ul>
+                        </div>
+                     </nav>
+               </div>
+            </div>
+            <!-- logo, copy right -->
+            <div class="footerAricle">
+               <div class="container">
+                     <div class="dis_table">
+                        <div class="figure">
+                           <img src="data:image/png;base64,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" alt="로고">
+                        </div>
+                        <div class="figcaption">
+                           <div class="adressGroup">
+                                 <address>
+                                    사업자등록번호  000-000-00000 <br>
+                                    대전광역시 동구 천동 휴먼시아 아파트 1단지 
+                                    T. 010-6669-3152 / F. 042-000-0000 / azxc4862@gmail.com
+                                 </address>
+                                 <span class="copyRight">
+                                    © 2022 CODExBridge. All rights reserved
+                                 </span>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+         <!-- scroll top btn -->
+         <nav id="quickNav">
+            <a href="#wrap" class="topNavBtn">
+                <i class="xi-angle-up"></i>
+                <span>TOP</span>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>

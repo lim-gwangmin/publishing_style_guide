@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>style guide template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicon/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./img/favicon/favicon-512x512.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
     <!-- css -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/layout.css">
@@ -13,14 +22,14 @@
     <link rel="stylesheet" href="./iconFont/XEIcon-2.2.0/xeicon.min.css">
     <!-- plugIn -->
     <script src="./plugin/jquery/jquery-3.2.1.min.js"></script>
-        <!-- slick slide -->
-        <script src="./plugin/slick-1.8.1/slick/slick.min.js"></script>
-        <link rel="stylesheet" href="./plugin/slick-1.8.1/slick/slick.css">
+   <!-- slick slide -->
+   <script src="./plugin/slick-1.8.1/slick/slick.min.js"></script>
+   <link rel="stylesheet" href="./plugin/slick-1.8.1/slick/slick.css">
     <!-- js -->
     <script src="./js/layout.js"></script>
     <script src="./js/util.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/slide.js"></script>
+    <script src="./js/slide.js"></script>x
 </head>
 <body>
     <div id="wrap">
@@ -44,57 +53,62 @@
                     <div class="depthMenu">
                         <ul class="clear-fix" id="gnb">
                             <li class="depth1">
-                                <a href="./subPage/subLayout.html" class="depth1_title">
+                                <a href="./subPage/table/subLayout.html" class="depth1_title">
                                     게시판
                                 </a>
                                 <ul class="depth2">
                                     <li>
-                                        <a href="./subPage/tableList.html">
+                                        <a href="./subPage/table/tableList.html">
                                             table list
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="./subPage/tableGallery.html">
+                                        <a href="./subPage/table/tableGallery.html">
                                             table gallery
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="./subPage/tableBookStyle.html">
+                                        <a href="./subPage/table/tableBookStyle.html">
                                             table book style
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="./subPage/tableThumbnail.html">
+                                        <a href="./subPage/table/tableThumbnail.html">
                                             table thumbnail
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="depth1">
-                                <a href="" class="depth1_title">
-                                    대메뉴 2
+                                <a href="./subPage/component/listStyle.html" class="depth1_title">
+                                    컴포넌트
                                 </a>
                                 <ul class="depth2">
                                     <li>
-                                        <a href="#">
-                                            뎁스2 메뉴
+                                        <a href="./subPage/component/listStyle.html">
+                                          list style
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            뎁스2 메뉴
+                                        <a href="./subPage/component/inputStyle.html">
+                                          input style
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            뎁스2 메뉴
+                                        <a href="./subPage/component/slideStyle.html">
+                                            slide style
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            뎁스2 메뉴
+                                        <a href="./subPage/component/tableStyle.html">
+                                            table style
                                         </a>
                                     </li>
+                                    <li>
+                                       <a href="./subPage/component/buttonModalStyle.html">
+                                           button, modal style
+                                       </a>
+                                   </li>
                                 </ul>
                             </li>
                             <li class="depth1">
@@ -261,209 +275,18 @@
             <!-- sections -->
             <section id="section1" class="section bgColor_F8F4FF">
                 <article class="container">
-                    <div>
-                        <h3 class="section_title">list style</h3>
-                    </div>
-                    <div class="borders solid borderColor_000 margin_bt50">
-                        <ol class="list_style_number ">
-                           <li>
-                              넘버 리스트 스타일
-                           </li>
-                           <li>
-                              넘버 리스트 스타일
-                           </li>
-                           <li>
-                              넘버 리스트 스타일
-                           </li>
-                        </ol>
-                    </div>
-                    <div class="borders solid borderColor_000">
-                        <ul>
-                           <li class="list_style_dot">
-                              도트 리스트 스타일
-                           </li>
-                           <li class="list_style_dot">
-                              도트 리스트 스타일
-                           </li>
-                           <li class="list_style_dot">
-                              도트 리스트 스타일
-                           </li>
-                        </ul>
-                    </div>
+                     <h3 class="section_title margin_bt0">section01</h3>
                 </article>
             </section>
             <section id="section2" class="section bgColor_6781F8">
                <article class="container">
-                   <div>
-                       <h3 class="section_title fontColor_fff">input style</h3>
-                       <ul>
-                           <li>
-                              <span class="custom_radio">
-                                 <input type="radio" id="radio_input01" name="radio01" checked>
-                                 <label for="radio_input01">input radio</label>
-                              </span>
-                              <span class="custom_radio padding_lf20 padding_rt20">
-                                 <input type="radio" id="radio_input02" name="radio01">
-                                 <label for="radio_input02">input radio</label>
-                              </span>
-                              <span class="custom_radio">
-                                 <input type="radio" id="radio_input03" name="radio01">
-                                 <label for="radio_input03">input radio</label>
-                              </span>
-                           </li>
-                           <li class="margin_top30">
-                              <span class="custom_checkbox">
-                                 <input type="checkbox" id="checkbox_input01" name="checkbox02" checked>
-                                 <label for="checkbox_input01">input checkbox</label>
-                              </span>
-                              <span class="custom_checkbox padding_lf20 padding_rt20">
-                                 <input type="checkbox" id="checkbox_input02" name="checkbox02">
-                                 <label for="checkbox_input02">input checkbox</label>
-                              </span>
-                              <span class="custom_checkbox">
-                                 <input type="checkbox" id="checkbox_input03" name="checkbox03">
-                                 <label for="checkbox_input03">input checkbox</label>
-                              </span>
-                           </li>
-                           <li class="margin_top30">
-                              <div class="dis_flex align_middle borders solid borderColor_000">
-                                 <span class="custom_file">
-                                    <input type="file" id="file01" data-fileInput='file01'>
-                                    <label for="file01">input file</label>
-                                 </span>
-                                 <div class="file_name margin_lf20" data-fileInput="file01"></div>
-                              </div>
-                              <div class="dis_flex align_middle margin_top20 borders solid borderColor_000">
-                                 <span class="custom_file dis_block">
-                                    <input type="file" id="file02" data-fileInput='file02' multiple>
-                                    <label for="file02">input file multiple</label>
-                                 </span>
-                                 <div class="file_name margin_lf20" data-fileInput="file02"></div>
-                              </div>
-                              <div class="dis_flex align_middle margin_top20 borders solid borderColor_000">
-                                 <span class="custom_file dis_block">
-                                    <input type="file" id="file03" data-fileInput='file03' data-fileLength="2"  multiple>
-                                    <label for="file03">input file multiple - max length</label>
-                                 </span>
-                                 <div class="file_name margin_lf20" data-fileInput="file03"></div>
-                              </div>
-                           </li>
-                           <style>
-                              .file_arg {margin:0 .5rem; color:#fff;}
-                           </style>
-                       </ul>
-                   </div>
-               </article>
+                  <h3 class="section_title margin_bt0 fontColor_fff">section02</h3>
+             </article>
             </section>
             <section id="section3" class="section bgColor_FFF6F6">
                <article class="container">
-                  <h3 class="section_title">
-                     table style
-                  </h3>
-                  <div class="table_wrap">
-                     <table class="custom_table color_876EBE">
-                        <colgroup>
-                           <col class="w25">
-                           <col class="w25">
-                           <col class="w25">
-                           <col class="w25">
-                        </colgroup>
-                        <thead>
-                           <tr>
-                              <th>테이블</th>
-                              <th>테이블</th>
-                              <th>테이블</th>
-                              <th>테이블</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>1</td>
-                              <td>2</td>
-                              <td>3</td>
-                              <td>4</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="table_wrap margin_top30">
-                     <table class="custom_table color_6781F8">
-                        <colgroup>
-                           <col class="w25">
-                           <col class="w25">
-                           <col class="w25">
-                           <col class="w25">
-                        </colgroup>
-                        <thead>
-                           <tr>
-                              <th>테이블</th>
-                              <th>테이블</th>
-                              <th>테이블</th>
-                              <th>테이블</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr class="total">
-                              <td>1</td>
-                              <td>2</td>
-                              <td>3</td>
-                              <td>4</td>
-                           </tr>
-                           <tr class="total">
-                              <td>1</td>
-                              <td>2</td>
-                              <td>3</td>
-                              <td>4</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-               </article>
-            </section>
-            <section id="section4" class="section bgColor_F2F4FC">
-                <article class="container">
-                    <div>
-                        <h3 class="section_title">
-                           Slide style
-                        </h3>
-                        <div>
-                           <ul class="slider_wrap">
-                              <li>
-                                 <img src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY06,$PPSW,$WY19B,$INPB0&view=FRONT34&model=my&size=1920&bkba_opt=2&crop=0,0,0,0&version=v0121-b5638c80d202211170306" alt="">
-                              </li>
-                              <li>
-                                 <img src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY06,$PPSW,$WY19B,$INPB0&view=SIDE&model=my&size=1920&bkba_opt=2&crop=0,0,0,0&version=v0121-b5638c80d202211170306" alt="">
-                              </li>
-                              <li>
-                                 <img src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY06,$PPSW,$WY19B,$INPB0&view=REAR34&model=my&size=1920&bkba_opt=2&crop=0,0,0,0&version=v0121-b5638c80d202211170306" alt="">
-                              </li>
-                              <li>
-                                 <img src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MTY06,$PPSW,$WY19B,$INPB0&view=RIMCLOSEUP&model=my&size=1920&bkba_opt=2&crop=0,0,80,0&version=v0121-b5638c80d202211170306" alt="">
-                              </li>
-                           </ul>
-                        </div>
-                    </div>
-                </article>
-                <script>
-                     slider.funcType01('.slider_wrap');
-                </script>
-            </section>
-            <section id="section5" class="section bgColor_F8F8F8">
-                <article class="container">
-                    <div>
-                        <h3 class="section_title">modal, button style</h3>
-                        <div class="txt_center">
-                           <button class="btn style01 fontSize_20 modal_open margin_rt20" data-modal="modal_type01">
-                              button style01 <br>
-                              modal oepn
-                           </button>
-                           <button class="btn style02 fontSize_20 modal_open" data-modal="modal_type02">
-                              button style02 <br>
-                              depth modal oepn
-                           </button>
-                        </div>
-                     </div>
-                </article>
+                  <h3 class="section_title margin_bt0">section03</h3>
+             </article>
             </section>
         </main>
         <!-- footer -->
@@ -529,61 +352,6 @@
                 <span>TOP</span>
             </a>
         </nav>
-        <!-- modal 1 -->
-         <div class="modal modal_type01 modal_bg">
-            <div class="modal_container">
-               <div class="modal_header">
-                  <h5 class="modal_title">모달1 타이틀</h5>
-                  <button class="btn_modal_close modal_close icon_font" data-modal="modal_type01">   
-                     <span class="sr-only">닫기</span>
-                  </button>
-               </div>
-               <div class="modal_body">
-                  <p>
-                     여기서 잠시, 채용비위란 법령을 위반하여 채용시험에 부당한 영향을 주는 행위를 의미합니다. 
-                  </p>
-                  <p>
-                     예를 들어 특정인을 채용하기 위해서 자료를 위조하는 등의 행위가 이에 해당합니다.
-                     채용비위로 인한 합격 및 임용을 취소할 수 있는 법적 근거를 명확히 함으로써 채용공정성에 대한 국민적 신뢰를 한층 더 높일 수 있을 것으로 기대됩니다.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <!-- modal 2 -->
-         <div class="modal modal_type02 modal_bg">
-            <div class="modal_container">
-               <div class="modal_header">
-                  <h5 class="modal_title">모달2 타이틀</h5>
-                  <button class="btn_modal_close modal_close icon_font" data-modal="modal_type02">   
-                     <span class="sr-only">닫기</span>
-                  </button>
-               </div>
-               <div class="modal_body">
-                  <p>
-                     여기서 잠시, 채용비위란 법령을 위반하여 채용시험에 부당한 영향을 주는 행위를 의미합니다. 
-                  </p>
-                  <div class="txt_center margin_top30">
-                     <button class="btn style01 fontSize_18 modal_open" data-modal="modal_type03">이중모달 오픈</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- modal 3 -->
-         <div class="modal modal_type03 modal_bg">
-            <div class="modal_container">
-               <div class="modal_header">
-                  <h5 class="modal_title">모달3 타이틀</h5>
-                  <button class="btn_modal_close modal_close icon_font" data-modal="modal_type03">   
-                     <span class="sr-only">닫기</span>
-                  </button>
-               </div>
-               <div class="modal_body">
-                  <p>
-                     여기서 잠시, 채용비위란 법령을 위반하여 채용시험에 부당한 영향을 주는 행위를 의미합니다. 
-                  </p>
-               </div>
-            </div>
-         </div>
     </div>
 </body>
 </html>

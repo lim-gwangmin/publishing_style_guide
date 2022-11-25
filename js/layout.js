@@ -223,8 +223,8 @@ $(function() {
 
       // desk top
       if (winWid > 1024 && $thisParent.hasClass(ACTIVE)) {
-            // preventDefault
-            return false;
+         // preventDefault
+         return false;
       } 
       
       // pad, mobile
